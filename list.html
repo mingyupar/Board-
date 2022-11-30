@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <center>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" href="main.css">
+        <style type="text/css">
+            /*td{border:3px solid #323; padding:15px} */
+        </style>
+        <title>BOARD LIST</title>
+        </head>
+<body>
+<h1>자유롭게 글을 남겨주세요</h1>
+
+<table>
+    <tr>
+        <td>번호 </td>
+        <td>작성자</td>
+        <td>제목</td>
+        <td>작성일</td>
+    </tr>
+    <tr>
+        <td>1</td>
+        <td>홍길동</td>
+        <td>안녕하세요</td>
+        <td>2022-11-30</td>
+    </tr>
+    <?
+  while($row = mysqli_fetch_row($result))
+  {
+?>
+    <tr>
+        <td width="50"><?=$row[0]?></td>
+        <td width="70"><?=$row[1]?></td>
+        <td width="200"><?=$row[2]?></a></td>
+    </tr>
+    <?
+  }
+?>
+</table>
+
+
+
+
+<button type="button"> <a href="http://localhost:63342/hanghae/hanghae.main/templates/index3.html?_ijt=elotdigdg4lutvhhgc037d1b4m&_ij_reload=RELOAD_ON_SAVE">Other Pages</a></button>
+
+</center>
+</body>
+</html>
